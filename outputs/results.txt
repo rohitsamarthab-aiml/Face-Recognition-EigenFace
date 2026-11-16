@@ -1,0 +1,7 @@
+PCA AND EIGENFACES PROJECT RESULTS
+Total images: 400
+Training images: 300
+Testing images: 100
+Principal components: 100
+Variance retained: 94.40%
+Recognition accuracy: 94.00%
