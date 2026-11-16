@@ -58,6 +58,7 @@ $$k^* = \arg\min_k \epsilon_k$$
 
 ## ✨ Key Features
 
+- **Modular & Clean Architecture**: Cleanly separated HTML (`index.html`), CSS (`styles.css`), and JavaScript (`script.js`), ensuring all source code is lightweight and viewable directly on GitHub without truncation.
 - **Standardized PCA Pipeline**: Pure scikit-learn and NumPy implementation for dataset loading, preprocessing, variance evaluation, and classification.
 - **High Retention & Accuracy**:
   - **94.40%** variance retained using 100 components.
@@ -66,7 +67,7 @@ $$k^* = \arg\min_k \epsilon_k$$
   - **Page 1: Code & Modules**: Complete Python source code viewer, module breakdown (NumPy, scikit-learn, Matplotlib), and a 9-stage code workflow.
   - **Page 2: Interactive Results**: Animated recognition demonstration, candidate distance rankings, full face & Eigenface gallery, and interactive Euclidean distance calculator.
   - **Page 3: Mathematical Theory**: Core equations, 15 theoretical sections, and 10 expandable viva-voce questions with model answers.
-- **Zero External Dependencies for UI**: Completely self-contained web platform with embedded base64 images that runs offline in any browser.
+- **Zero External Dependencies for UI**: Completely self-contained web platform with organized local assets that runs offline in any browser.
 
 ---
 
@@ -77,8 +78,8 @@ $$k^* = \arg\min_k \epsilon_k$$
   - `scikit-learn`: `fetch_olivetti_faces`, `train_test_split`, `PCA`, `accuracy_score`, `classification_report`.
   - `matplotlib`: Visualization of Eigenfaces, cumulative explained variance curves, and face match grids.
 - **Frontend / Laboratory Interface**
-  - **HTML5 & CSS3**: Responsive academic laboratory theme (Dark Navy / Indigo / Purple), glassmorphism, responsive grids.
-  - **Vanilla JavaScript (ES6+)**: Interactive multi-page routing, animated Euclidean distance calculations, modal lightboxes, and accordions.
+  - **HTML5 & CSS3**: Modular stylesheets (`styles.css`), dark academic theme (Dark Navy / Indigo / Purple), glassmorphism, responsive grids.
+  - **Vanilla JavaScript (ES6+)**: Modular script (`script.js`), multi-page tab routing, animated Euclidean distance calculations, modal lightboxes, and accordions.
 
 ---
 
@@ -87,11 +88,15 @@ $$k^* = \arg\min_k \epsilon_k$$
 ```text
 Face-Recognition-EigenFace/
 ├── index.html                  # Interactive 3-page web dashboard & laboratory UI
+├── styles.css                  # UI styling & dark academic laboratory theme
+├── script.js                   # Interactive routing, animations & distance calculator
 ├── main.py                     # Complete 192-line Python PCA & Eigenfaces script
 ├── README.md                   # Comprehensive project documentation
 ├── STUDENT_DETAILS.md          # Team member and academic project details
 ├── .gitignore                  # Git exclusions for Python and system files
 ├── LICENSE                     # MIT License
+├── assets/
+│   └── images/                 # Modular face and Eigenface image assets
 └── outputs/
     ├── eigenfaces.png          # Mean face + top 9 principal component Eigenfaces
     ├── explained_variance.png  # Cumulative explained variance curve (1 to 100 components)

@@ -20,3 +20,4 @@
 
 ### Project Overview
 A machine learning and linear algebra laboratory project focusing on dimensionality reduction, covariance matrix decomposition, eigenvalue/eigenvector computation, and facial recognition using Eigenfaces on the AT&T Cambridge Olivetti Faces dataset.
+

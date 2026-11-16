@@ -1,3 +1,6 @@
+# Backup directory
+backup/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -43,4 +46,3 @@ ehthumbs.db
 *.swp
 *.swo
 *~
-
